@@ -27,6 +27,11 @@ Este proyecto esta Generado en Flask 3.0.2 [Flask Micro-FrameWork](https://githu
 
 ![image](https://github.com/Sebastian-Beltran-rincon-22/tours-flask/assets/132385582/016d4fb2-8a49-44f3-ad1e-36f61c6c252c)
 
+## Referencia
+> [!TIP]
+>Puedes ver la estructura del Front-End clickeando <a href="https://github.com/Sebastian-Beltran-rincon-22/bookings">aqui</a>
+
+
 
 ## Funcionalidades
 
