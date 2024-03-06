@@ -4,8 +4,8 @@
 - [Estructura de carpetas](#estructura-de-carpetas)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologías Usadas](#tecnologias-usadas)
-- [Instalación](#instalacion)
-- [Configuración](#configuracion)
+- [Instalación](#instalación)
+- [Configuración](#configuración)
 - [Uso](#uso)
 - [Contacto](#contacto)
 - [Autores](#autores)
@@ -20,11 +20,18 @@ Este proyecto esta Generado en Flask 3.0.2 [Flask Micro-FrameWork](https://githu
 
 ## Version Oficial V1.0
 
-![Captura de pantalla 2024-03-04 060439](https://github.com/TheLostHeaven/Prueba-Tecnica-Flask-Python/assets/90277397/8079b889-650f-4d7d-8800-f3e76e938f6e)
+![image](https://github.com/Sebastian-Beltran-rincon-22/tours-flask/assets/132385582/a0877783-2fa5-4b65-82cf-1410f3e39058)
+
 
 ## Estructura de carpetas
 
-![Captura de pantalla 2024-03-04 055919](https://github.com/TheLostHeaven/Prueba-Tecnica-Flask-Python/assets/90277397/b9921fcd-2d9f-4509-84bb-c6f08c0b9c95)
+![image](https://github.com/Sebastian-Beltran-rincon-22/tours-flask/assets/132385582/016d4fb2-8a49-44f3-ad1e-36f61c6c252c)
+
+## Referencia
+> [!TIP]
+>Puedes ver la estructura del Front-End clickeando <a href="https://github.com/Sebastian-Beltran-rincon-22/bookings">aqui</a>
+
+
 
 ## Funcionalidades
 
@@ -46,12 +53,12 @@ Este proyecto esta Generado en Flask 3.0.2 [Flask Micro-FrameWork](https://githu
 
 1 Clona el repositorio en tu maquina local
 ```bash
-git clone https://github.com/TheLostHeaven/Prueba-Tecnica-Flask-Python
+git clone https://github.com/Sebastian-Beltran-rincon-22/tours-flask.git
 ```
 
 2 Navega en el directorio del proyecto 
 ```bash
-cd tours
+cd tours-flask
 ```
 
 3 Puedes cambiar el origen del proyecto con los siguientes comando
@@ -66,29 +73,29 @@ git remote add origin <nueva_url_del_repositorio>
 
 - Windows
 ```bash
-    python -m venv venv
+python -m venv venv
 ```
 - Linux/Mac
 ```bash
-    python3 -m venv venv
+python3 -m venv venv
 ```
 
 5 Inicia el entorno virtual
 
 - Windows
 ```bash
-    venv/Scripts/activate
+venv/Scripts/activate
 ```
 - Linux/Mac
 ```bash
-    source venv/bin/activate
+source venv/bin/activate
 ```
 
 6 Instalar las dependecias necesarias con el entorno activo
 - Recuerda tener el requirements.txt en el root de la carpeta y ejecutas
 
 ```bash
-    pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 
@@ -112,7 +119,7 @@ JWT_KEY=
 
 3 Inicia la app con 
 ```bash
-    python index.py
+python index.py
 ```
 
 4 Puedes acceder a ella desde el puerto configurado:
@@ -146,6 +153,6 @@ http://127.0.0.1:5000/bookings/completebooking
 
 Si tienes alguna pregunta o sugerencia o quieres la documentacion para desarrollar este proyecto, no dudes en contactarme en [sebastianrincon834@gmail.com](sebastianrincon834@gmail.com).
 
-## Autors
+## Autores
 
 - [@Sebastian Beltran](https://github.com/Sebastian-Beltran-rincon-22)
