@@ -10,4 +10,3 @@ database = os.environ["MYSQL_DB"]
 secret_key = os.environ["SECRET_KEY"]
 
 DATABASE_CONNECTION_URI = f'mysql://{user}:{password}@{host}/{database}'
-print(DATABASE_CONNECTION_URI)
