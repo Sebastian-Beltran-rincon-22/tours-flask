@@ -7,10 +7,11 @@ from datetime import datetime
 
 main =Blueprint('tours',__name__)
 
+#Crear Tour
 @main.route('/newtour', methods=['POST'])
 def add_tour():
     authorization_header = request.headers.get('Authorization')
-
+    #bearer token
     if not authorization_header:
         response = jsonify({'message': 'Unauthorized - Missing Authorization header'})
         return response, 401
@@ -47,7 +48,7 @@ def add_tour():
 
             db.session.add(new_tour)
             db.session.commit()
-
+            #Respuesta JSON
             return jsonify({
                 'message': 'Tour creado con éxito',
                 'nameTour': nameTour,
@@ -56,7 +57,7 @@ def add_tour():
                 'user_id': user_id,
                 'price': price
             }),200
-
+    #Manejo de errores
     except (jwt.ExpiredSignatureError, jwt.InvalidTokenError) as e:
         print(f"Error de decodificación del token: {e}")
         return "Token inválido o expirado", 401
@@ -108,8 +109,9 @@ def update_tour(id):
 @main.route('/toursdetails', methods=['GET'])
 def get_tour():
     try:
+        #Busqueda de tours
         tours = Tours.query.all()
-
+        #Datos a mostrar
         tours_data = [{'id': tour.id, 'nameTour': tour.nameTour ,
             'descriptionTour': tour.descriptionTour, 
             'date': tour.date, 
@@ -124,11 +126,13 @@ def get_tour():
 @main.route('/delete/<id>', methods = ["DELETE", "GET"])
 def delete_tour(id):
     try:
+        #Busqueda del Tour poe ID
         tour = db.session.get(Tours,id)
+        #Eliminar Tour
         db.session.delete(tour)
         db.session.commit()
-    
-        return jsonify({'tours': "delete Tour"}), 200
+
+        return jsonify({'tours': "delete Tour"}), 200 #Respuesta JSON
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
