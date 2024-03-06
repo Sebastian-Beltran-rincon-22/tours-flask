@@ -9,7 +9,7 @@ def create_app():
     app = Flask(__name__)
     CORS(app, origins='http://localhost:4200') #CORS peticiones 
     app.secret_key = secret_key
-    app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_CONNECTION_URI
+    app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_CONNECTION_URI #Conección a la DB
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['JWT_SECRET_KEY'] = secret_key  # Reemplaza con tu clave secreta
     app.config['JWT_TOKEN_LOCATION'] = ['headers']
